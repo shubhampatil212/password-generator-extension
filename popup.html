@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+      color: #333;
+      margin: 0;
+      padding: 15px;
+      text-align: center;
+      width: 320px; /* Fixed width */
+      height: 200px; /* Reduced height */
+      overflow: hidden;
+    }
+
+    h2 {
+      color: #1e88e5;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    #password {
+      font-size: 14px;
+      text-align: center;
+      padding: 10px;
+      width: calc(100% - 40px); /* Adjusted width */
+      max-width: 320px;
+      border: 2px solid #1e88e5;
+      border-radius: 8px;
+      background: #fff;
+      margin: 10px auto 15px; /* Reduced space below */
+      display: block;
+      color: #333;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px; /* Spacing between buttons */
+      margin-top: 5px;
+    }
+
+    button {
+      width: 100px; /* Fixed width */
+      height: 40px; /* Fixed height */
+      background: linear-gradient(135deg, #1e88e5, #64b5f6);
+      color: white;
+      font-size: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #1565c0, #42a5f5);
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    button:active {
+      transform: scale(0.98); /* Subtle click effect */
+      background: linear-gradient(135deg, #0d47a1, #1e88e5); /* Color grading on click */
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 11px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h2>Secure Password Generator</h2>
+  <input type="text" id="password" readonly placeholder="Click 'Generate' for a password!" />
+  <div class="buttons">
+    <button id="generate">Generate</button>
+    <button id="copy">Copy</button>
+    <button id="paste">Paste</button>
+  </div>
+  <div class="footer">Made with ❤️ to keep your accounts secure!</div>
+  <script src="popup.js"></script>
+</body>
+</html>
