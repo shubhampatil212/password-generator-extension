@@ -6,7 +6,7 @@ The **Password Generator Extension** is a simple browser extension that helps yo
 
 - **Generate Password**: Click the "Generate" button to create a secure, random password.
 - **Copy to Clipboard**: Copy the generated password to your clipboard with a click of the "Copy" button.
-- **Paste Password**: Automatically paste the generated password into a password field on a webpage with the "Paste" button.
+- **Paste Password**: Automatically paste the generated password into a password field on a webpage with the "Paste" button. (This feature not yet available)
 
 ## Installation
 
